@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#page1{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #F8F6F3;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+}
+
+.page1_left{
+  width: 50%;
+  height: 100%;
+  padding: 2% 2%;
+}
+
+#page1 h1{
+  font-size: 120px;
+  font-weight: 300;
+  font-family: 'Merriweather', serif;
+}
+
+#page1 h1 span{
+  font-weight: 900;
+  color: #B395F9;
+}
+
+button{
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 1.8% 4%;
+  font-size: 30px;
+  font-weight: 900;
+  border: none;
+  margin: 5% 0;
+  border-radius: 10px;
+  background-color: #B395F9;
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+  cursor: pointer;
+  transition: .3s linear all;
+}
+
+button::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  border-radius: 10px;
+  top: 10%;
+  left: 2%;
+  z-index: -1;
+} 
+
+button:hover{
+  font-size: 28px;
+}
+
+
+.page1_right{
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+img{
+  width:500px;
+  transform: rotateY(180deg);
+  margin-left: 20%;
+}
+
+.bg_img{
+  position: absolute;
+  right: 0;
+  width: 700px;
+}
+
+
+#data_page{
+  width: 100%;
+  height: 100%;
+  background-color: #f8f6f38f;
+  /* opacity: .8; */
+  position: absolute;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  background-color: #9167f2;
+  padding: 40px;
+  width: 28%;
+  border-radius: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input{
+  width: 100%;
+  height: 40px;
+  border-radius: 7px;
+  font-family: 'Quicksand', sans-serif;
+  padding:30px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 55px;
+  font-weight: 500;
+  color: black;
+}
+
+
+.btn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:0;
+  height: 80px;
+  font-size: 30px;
+  /* border: 5px solid white; */
+  background-color:#B395F9;
+  color: #ffff;
+  cursor: pointer;
+  font-weight: 900;
+  transform: .1s linear all;
+}
+
+.btn:hover{
+  font-size:32px ;
+}
+
+a{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
